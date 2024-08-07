@@ -6,9 +6,9 @@ import 'package:to_do_apps/src/features/main/my_task/presentation/pages/my_task.
 import 'firebase_options.dart';
 
 void main() async {
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
+  // await Firebase.initializeApp(
+  //   options: DefaultFirebaseOptions.currentPlatform,
+  // );
   runApp(const MyApp());
 }
 
