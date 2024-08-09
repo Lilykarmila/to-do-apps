@@ -19,6 +19,7 @@ dependencies:
   iconsax: ^0.0.8
   get_it: ^7.7.0
   firebase_core: ^2.24.2
+  firebase_messaging: ^14.7.10
 
 dev_dependencies:
   flutter_test:
