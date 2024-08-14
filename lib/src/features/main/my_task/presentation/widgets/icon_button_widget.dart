@@ -1,3 +1,5 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class IconButtonWidget extends StatelessWidget {
@@ -14,9 +16,11 @@ class IconButtonWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: onPressed,
-      child: Icon(icon, color: color),
+    return IconButton(
+      onPressed: onPressed,
+      icon: Icon(icon, color: color),
+      // onTap: onPressed,
+      // child: Icon(icon, color: color),
     );
   }
 }

@@ -5,11 +5,15 @@ import 'package:to_do_apps/src/features/auth/sign_up/presentation/widgets/sign_u
 
 class SignUpPage extends StatelessWidget {
   const SignUpPage({Key? key}) : super(key: key);
+
   static const routeName = '/sign-up';
 
   @override
   Widget build(BuildContext context) {
     final TextEditingController emailController = TextEditingController();
+    final TextEditingController usernameController = TextEditingController();
+    final TextEditingController passwordController = TextEditingController();
+    final TextEditingController confirmPasswordController = TextEditingController();
 
     return Scaffold(
       body: Padding(
@@ -25,6 +29,9 @@ class SignUpPage extends StatelessWidget {
                   //form
                   SignUpFormWidget(
                     emailController: emailController,
+                    passwordController: passwordController,
+                    // confirmPasswordController: confirmPasswordController,
+                    usernameController: usernameController,
                   ),
 
                   // footer

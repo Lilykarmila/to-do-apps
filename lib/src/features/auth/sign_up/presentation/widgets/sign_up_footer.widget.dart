@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../../../../commons/icon_button.widget.dart';
-import '../../../login/presentation/pages/sign_in_page.dart';
+import '../../../login/presentation/pages/login_page.dart';
 
 class FooterSignUpWidget extends StatelessWidget {
   const FooterSignUpWidget({

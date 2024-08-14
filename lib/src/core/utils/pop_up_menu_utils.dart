@@ -1,7 +1,11 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:to_do_apps/src/config/theme/color.theme.dart';
+import 'package:to_do_apps/src/core/utils/auth_service.dart';
+import 'package:to_do_apps/src/features/auth/login/presentation/pages/login_page.dart';
+import 'package:to_do_apps/src/features/notification/presentation/pages/notification.page.dart';
 
 class PopupMenuUtils {
   void showPopupMenu(BuildContext context) {
@@ -19,6 +23,21 @@ class PopupMenuUtils {
         borderSide: BorderSide.none,
       ),
       items: [
+        PopupMenuItem<int>(
+          value: 2,
+          child: GestureDetector(
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) => const NotificationPage()));
+            },
+            child: const Row(
+              children: [
+                Icon(CupertinoIcons.bell, color: AppColorTheme.primary400),
+                SizedBox(width: 8),
+                Expanded(child: Text('Notification')),
+              ],
+            ),
+          ),
+        ),
         PopupMenuItem<int>(
           padding: const EdgeInsets.only(right: 0, left: 10),
           value: 0,
@@ -85,6 +104,32 @@ class PopupMenuUtils {
                 Icon(Iconsax.arrow_swap, color: AppColorTheme.primary400),
                 SizedBox(width: 8),
                 Expanded(child: Text('Sort')),
+              ],
+            ),
+          ),
+        ),
+        PopupMenuItem<int>(
+          value: 2,
+          child: InkWell(
+            onTap: () async {
+              await AuthService.logout().then((value) {
+                ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text("Berhasil Logout")));
+                Navigator.pushNamedAndRemoveUntil(
+                  context,
+                  LoginPage.routeName,
+                  (Route<dynamic> route) => false,
+                );
+              });
+            },
+            child: const Row(
+              children: [
+                Icon(Iconsax.logout, color: Colors.red),
+                SizedBox(width: 8),
+                Expanded(
+                    child: Text(
+                  'Log Out',
+                  style: TextStyle(color: Colors.red),
+                )),
               ],
             ),
           ),
