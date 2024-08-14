@@ -13,7 +13,7 @@ class HeaderSignUpWidget extends StatelessWidget {
     return Column(
       children: [
         Image.asset(
-          'assets/images/login.png',
+          'assets/images/signup.png',
           height: 200,
         ),
         const SizedBox(height: 10),

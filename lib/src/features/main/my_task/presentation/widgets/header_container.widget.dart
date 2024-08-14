@@ -43,8 +43,8 @@ class HeaderContainer extends StatelessWidget {
               )),
           Container(
             margin: EdgeInsets.only(top: 70),
-            padding: EdgeInsets.symmetric(horizontal: 12),
-            height: 90.0,
+            padding: EdgeInsets.symmetric(horizontal: 8),
+            height: 110.0,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -68,20 +68,28 @@ class HeaderContainer extends StatelessWidget {
                   ],
                 ),
                 SizedBox(height: 10),
-                Text(
-                  'Today, 1 May',
-                  style: GoogleFonts.poppins(
-                    fontWeight: FontWeight.w300,
-                    fontSize: 12,
-                    color: Colors.white,
-                  ),
-                ),
-                Text(
-                  'My Tasks',
-                  style: GoogleFonts.poppins(
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
-                    fontSize: 18,
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 14),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Today, 1 May',
+                        style: GoogleFonts.poppins(
+                          fontWeight: FontWeight.w300,
+                          fontSize: 12,
+                          color: Colors.white,
+                        ),
+                      ),
+                      Text(
+                        'My Tasks',
+                        style: GoogleFonts.poppins(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                          fontSize: 18,
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ],

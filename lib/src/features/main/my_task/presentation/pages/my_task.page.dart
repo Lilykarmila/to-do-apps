@@ -10,7 +10,7 @@ import '../widgets/list_task.widget.dart';
 
 class MyTaskPage extends StatefulWidget {
   const MyTaskPage({super.key});
-  static const routeName = '/task';
+  static const routeName = '/my-task';
 
   @override
   State<MyTaskPage> createState() => _MyTaskPageState();

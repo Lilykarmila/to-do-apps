@@ -13,6 +13,7 @@ class LoginPage extends StatefulWidget {
 
 class _LoginPageState extends State<LoginPage> {
   final TextEditingController _emailController = TextEditingController();
+  final TextEditingController _passwordController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -31,6 +32,7 @@ class _LoginPageState extends State<LoginPage> {
                   //form
                   LoginFormWidget(
                     emailController: _emailController,
+                    passwordController: _passwordController,
                   ),
 
                   // footer
