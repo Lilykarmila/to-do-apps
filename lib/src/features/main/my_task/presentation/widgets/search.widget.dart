@@ -10,7 +10,7 @@ class SearchWidget extends StatelessWidget {
     return Expanded(
       child: Container(
         height: 35,
-        margin: EdgeInsets.symmetric(horizontal: 8),
+        margin: const EdgeInsets.symmetric(horizontal: 8),
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(20),

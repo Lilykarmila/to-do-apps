@@ -14,7 +14,7 @@ class CardTaskWidget extends StatelessWidget {
     return Container(
       width: 85,
       height: 90,
-      padding: EdgeInsets.symmetric(vertical: 10),
+      padding: const EdgeInsets.symmetric(vertical: 10),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
         color: Colors.white,

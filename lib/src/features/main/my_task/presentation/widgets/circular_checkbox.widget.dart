@@ -3,8 +3,8 @@ import 'package:to_do_apps/src/config/theme/color.theme.dart';
 
 class CircularCheckbox extends StatefulWidget {
   const CircularCheckbox({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   _CircularCheckboxState createState() => _CircularCheckboxState();

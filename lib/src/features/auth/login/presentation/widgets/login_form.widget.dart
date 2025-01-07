@@ -61,7 +61,12 @@ class LoginFormWidget extends StatelessWidget {
                 passwordController.text,
               ).then((value) {
                 if (value == "Login Successful") {
-                  ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Login Success")));
+                  ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                      content: const Text(
+                        "Login Success",
+                        style: TextStyle(color: Colors.white),
+                      ),
+                      backgroundColor: Colors.green[700]));
                   Navigator.pushNamedAndRemoveUntil(
                     context,
                     RootPage.routeName,

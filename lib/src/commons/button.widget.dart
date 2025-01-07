@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../config/theme/color.theme.dart';
-import '../config/theme/typography.theme.dart';
 
 class ButtonWidget extends StatelessWidget {
   final String title;

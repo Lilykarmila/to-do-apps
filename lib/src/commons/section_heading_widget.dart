@@ -21,8 +21,8 @@ class SectionHeadingWidget extends StatelessWidget {
             style: TypographyTextTheme.titleMedium,
           ),
         ),
-        Icon(Iconsax.arrow_down_1),
-        Icon(Iconsax.add)
+        const Icon(Iconsax.arrow_down_1),
+        const Icon(Iconsax.add)
       ],
     );
   }

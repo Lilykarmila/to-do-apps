@@ -42,8 +42,8 @@ class HeaderContainer extends StatelessWidget {
                 backgroundColor: AppColorTheme.whiteColor100.withOpacity(0.1),
               )),
           Container(
-            margin: EdgeInsets.only(top: 70),
-            padding: EdgeInsets.symmetric(horizontal: 8),
+            margin: const EdgeInsets.only(top: 70),
+            padding: const EdgeInsets.symmetric(horizontal: 8),
             height: 110.0,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -67,7 +67,7 @@ class HeaderContainer extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 14),
                   child: Column(
