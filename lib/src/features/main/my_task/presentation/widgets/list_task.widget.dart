@@ -1,8 +1,6 @@
-import 'dart:ffi';
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:to_do_apps/src/config/theme/typography.theme.dart';
 
 import 'circular_checkbox.widget.dart';
 
@@ -57,18 +55,18 @@ class _ListTaskWidgetState extends State<ListTaskWidget> {
                     size: widget.iconSize,
                   ),
                 // CircularCheckbox(),
-                SizedBox(width: 10),
+                const SizedBox(width: 10),
                 Expanded(
                   child: Text(
                     widget.taskTitle,
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontSize: 15,
                     ),
                   ),
                 ),
                 if (widget.tag != null)
                   Container(
-                    padding: EdgeInsets.symmetric(vertical: 4.0, horizontal: 8.0),
+                    padding: const EdgeInsets.symmetric(vertical: 4.0, horizontal: 8.0),
                     decoration: BoxDecoration(
                       color: widget.tagColor,
                       borderRadius: BorderRadius.circular(15),
@@ -95,7 +93,7 @@ class _ListTaskWidgetState extends State<ListTaskWidget> {
               Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  SizedBox(width: 25),
+                  const SizedBox(width: 25),
                   Text(
                     widget.taskDate!,
                     style: GoogleFonts.poppins(

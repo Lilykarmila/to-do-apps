@@ -1,5 +1,3 @@
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class IconButtonWidget extends StatelessWidget {
@@ -11,8 +9,8 @@ class IconButtonWidget extends StatelessWidget {
     required this.onPressed,
     required this.icon,
     required this.color,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 class PopMenuWidget extends StatelessWidget {
   const PopMenuWidget({
-    Key? key,
+    super.key,
     required this.menuList,
     this.icon,
-  }) : super(key: key);
+  });
   final List<PopupMenuEntry> menuList;
   final Widget? icon;
 

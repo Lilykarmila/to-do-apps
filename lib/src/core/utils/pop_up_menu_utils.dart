@@ -1,3 +1,4 @@
+import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -27,7 +28,10 @@ class PopupMenuUtils {
           value: 2,
           child: GestureDetector(
             onTap: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context) => const NotificationPage()));
+              Navigator.pushNamed(
+                context,
+                NotificationPage.routeName,
+              );
             },
             child: const Row(
               children: [

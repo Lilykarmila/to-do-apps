@@ -4,7 +4,7 @@ import 'package:to_do_apps/src/features/auth/sign_up/presentation/widgets/sign_u
 import 'package:to_do_apps/src/features/auth/sign_up/presentation/widgets/sign_up_header.widget.dart';
 
 class SignUpPage extends StatelessWidget {
-  const SignUpPage({Key? key}) : super(key: key);
+  const SignUpPage({super.key});
 
   static const routeName = '/sign-up';
 
@@ -43,6 +43,5 @@ class SignUpPage extends StatelessWidget {
         ),
       ),
     );
-    ;
   }
 }

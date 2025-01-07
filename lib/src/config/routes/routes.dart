@@ -25,7 +25,7 @@ class AppRoutes {
       case MyCalendarPage.routeName:
         return _materialRoute(const MyCalendarPage());
       case NotificationPage.routeName:
-        return _materialRoute(const NotificationPage());
+        return _materialRoute(NotificationPage());
       case DashboardPage.routeName:
         return _materialRoute(const DashboardPage());
       default:

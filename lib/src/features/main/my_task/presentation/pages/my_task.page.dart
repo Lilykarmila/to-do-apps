@@ -35,7 +35,7 @@ class _MyTaskPageState extends State<MyTaskPage> {
               onRightIconPressed: (context) => PopupMenuUtils().showPopupMenu(context),
             ),
             Container(
-              margin: EdgeInsets.all(20),
+              margin: const EdgeInsets.all(20),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -47,13 +47,13 @@ class _MyTaskPageState extends State<MyTaskPage> {
                       fontSize: 18,
                     ),
                   ),
-                  SizedBox(height: 10),
-                  ListTaskWidget(
+                  const SizedBox(height: 10),
+                  const ListTaskWidget(
                     taskTitle: 'ketemu dosen',
                     taskDate: '12 juli',
                     tag: 'kerja',
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                 ],
               ),
             ),
